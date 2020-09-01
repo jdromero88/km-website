@@ -14,12 +14,13 @@ $pink-invert: #fff;
 // Use the new pink as the primary color
 $primary: $pink;
 $primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
 */
 .navbar-brand a {
   font-family: "Delius Swash Caps", cursive;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); }
+
+.delius-swash-caps-font {
+  font-family: "Delius Swash Caps", cursive; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
