@@ -40,6 +40,27 @@ $primary-invert: $pink-invert;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px 5px 0 0; }
 
+.custom-card-content {
+  position: relative;
+  display: inline-block; }
+
+.custom-card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.6);
+  border: solid rgba(255, 255, 255, 0.6); }
+
+.custom-card-title > a {
+  color: black;
+  padding: 0 10px; }
+
+.developer {
+  font-size: 0.700em; }
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
