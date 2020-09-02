@@ -19,8 +19,26 @@ $primary-invert: $pink-invert;
   font-family: "Delius Swash Caps", cursive;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); }
 
+.navbar-end > a {
+  font-family: 'Dosis', sans-serif; }
+
 .delius-swash-caps-font {
-  font-family: "Delius Swash Caps", cursive; }
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400 !important; }
+
+.home-bio {
+  font-family: "Dosis", sans-serif; }
+
+.home-bio-description {
+  font-family: "Dosis", sans-serif; }
+
+.custom-card {
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s; }
+
+.custom-card > img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
