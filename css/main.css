@@ -37,6 +37,16 @@ $primary-invert: $pink-invert;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px 5px 0 0; }
 
+.social > .column > a {
+  color: #ff9b5b; }
+
+.social > .column > p {
+  font-family: "Dosis", sans-serif; }
+
+.findme {
+  color: #ff9b5b;
+  font-family: "Dosis", sans-serif; }
+
 .custom-card-content {
   position: relative;
   display: inline-block; }
