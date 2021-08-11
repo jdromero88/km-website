@@ -1,0 +1,84 @@
+// @use 'abstracts' as *;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:not(.btn):hover,
+  &:not(.btn):focus,
+  &:not(.btn):active {
+    color: inherit;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+// html {
+//   font-size: $font-size;
+// }
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+nav {
+  & a {
+    color: $nav-link-color-100;
+    text-decoration: none;
+
+    &:hover {
+      color: $nav-link-color-700;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+
+  & li {
+    display: inline;
+  }
+}
+
+article {
+  & ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+}
+
+figure {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  & p {
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
+}
+
+h2 {
+  font-size: clamp(.7rem, 1.1rem, 1.2rem);
+}

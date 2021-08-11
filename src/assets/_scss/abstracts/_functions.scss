@@ -1,0 +1,18 @@
+$browser-context: 18px;
+
+@function rem($size) {
+  @if is-px($size) == false {
+    $size: $size * 1px;
+  }
+
+  $rem-size: $size / $browser-context;
+  @return $rem-size * 1rem;
+}
+
+@function is-number($value) {
+  @return type-of($value) == 'number';
+}
+
+@function is-px($value) {
+  @return is-number($value) and index('px', unit($value)) != null;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "base-web-html",
+  "version": "1.0.0",
+  "description": "Estructura basica para comenzar un sitio web HTML, SASS, JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "sass src/assets/_scss/styles.scss src/css/index.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdromero88/base-web-html.git"
+  },
+  "author": "Jose Romero",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jdromero88/base-web-html/issues"
+  },
+  "homepage": "https://github.com/jdromero88/base-web-html#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  }
+}
