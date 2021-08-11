@@ -9,7 +9,10 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/about',
+  'pages/portfolio',
+  'pages/contact';
 // @use 'base/typography';
 // @use 'base/utilities';
 // @use 'components/buttons';
