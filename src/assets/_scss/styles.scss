@@ -6,6 +6,10 @@
   'abstracts/functions',
   'abstracts/mixins';
 @import 'base/base';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
 // @use 'base/typography';
 // @use 'base/utilities';
 // @use 'components/buttons';

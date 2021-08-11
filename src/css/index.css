@@ -489,4 +489,9 @@ h2 {
   font-size: clamp(.7rem, 1.1rem, 1.2rem);
 }
 
+.home {
+  background-color: rgba(74, 74, 74, 0.7);
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=index.css.map */
