@@ -1,7 +1,7 @@
 {
-  "name": "base-web-html",
+  "name": "Kelley Matney",
   "version": "1.0.0",
-  "description": "Estructura basica para comenzar un sitio web HTML, SASS, JS",
+  "description": "Kelley Matney website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
