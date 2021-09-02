@@ -448,23 +448,6 @@ body {
   margin-right: 0.5rem;
 }
 
-nav a {
-  color: #4a4a4a;
-  text-decoration: none;
-}
-nav a:hover {
-  color: rgba(74, 74, 74, 0.7);
-}
-nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-}
-nav li {
-  display: inline;
-}
-
 article ul {
   list-style: none;
   padding-left: 1rem;
@@ -490,8 +473,12 @@ h2 {
 }
 
 .home {
-  background-color: rgba(74, 74, 74, 0.7);
+  background-color: white;
   font-size: 2rem;
+}
+.home header {
+  display: flex;
+  justify-content: center;
 }
 
 .about {
@@ -507,6 +494,29 @@ h2 {
 .contact {
   background-color: #4a4a4a;
   font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+nav a:hover {
+  color: rgba(74, 74, 74, 0.7);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline;
+}
+nav li + li {
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
