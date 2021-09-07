@@ -1,4 +1,9 @@
 .home {
-  background-color: $nav-link-color-700;
+  background-color: $site-background-100;
   font-size: 2rem;
+
+  & header {
+    display: flex;
+    justify-content: center;
+  }
 }
