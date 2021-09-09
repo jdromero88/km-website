@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import './css/index.css';
+import Icon from './assets/images/female-icon.png'
 
 console.log('hola')
 const TODAY = new Date()
@@ -18,6 +19,15 @@ function component() {
   // Lodash, now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
+  // Add the image to our existing div.
+
+  const myIcon = new Image();
+
+  myIcon.src = Icon;
+
+
+  element.appendChild(myIcon);
+  
   return element;
 }
 
