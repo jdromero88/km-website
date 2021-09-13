@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './css/index.css';
 import Icon from './assets/images/female-icon.png'
+import KMInfo from './assets/data/km-info.json'
 
 console.log('hola')
 const TODAY = new Date()
@@ -27,9 +28,11 @@ function component() {
 
 
   element.appendChild(myIcon);
-  
+
   return element;
 }
 
 document.body.appendChild(yearElement());
 document.body.appendChild(component());
+
+console.log(KMInfo);
