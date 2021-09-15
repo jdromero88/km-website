@@ -1,34 +1,31 @@
 import _ from 'lodash';
-import './css/index.css';
-import Icon from './assets/images/female-icon.png'
+import printMe from './print.js';
 import KMInfo from './assets/data/km-info.json'
+import './css/main.css'
 
-console.log('hola')
+console.log('hola soy nuevo')
 const TODAY = new Date()
 const YEAR = TODAY.getFullYear()
 console.log(YEAR)
 
 function yearElement() {
-  const yearEl = document.getElementById('year')
-  yearEl.innerText = YEAR
-  return yearEl
+  // const yearEl = document.getElementById('year')
+  const element = document.createElement('span')
+  element.innerText = YEAR
+  return element
 }
 
 function component() {
   const element = document.createElement('div');
+  const btn = document.createElement('button');
 
-  // Lodash, now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 
-  // Add the image to our existing div.
+  btn.innerHTML = 'Click me and check the console!';
 
-  const myIcon = new Image();
+  btn.onclick = printMe;
 
-  myIcon.src = Icon;
-
-
-  element.appendChild(myIcon);
-
+  element.appendChild(btn);
   return element;
 }
 
@@ -36,3 +33,4 @@ document.body.appendChild(yearElement());
 document.body.appendChild(component());
 
 console.log(KMInfo);
+console.log(KMInfo.name);

@@ -1,21 +1,33 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const webpack = require("webpack");
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
   },
-  module: { //make sure tu run css-nano first
+  devtool: 'eval',
+  devServer: {
+    static: './dist',
+    hot: true //enables HMR (Hot Module Replacement)
+  },
+  module: {
     rules: [
-      { // this handle the CSS
-        test: /\.css$/i,
+      {
+        test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
-      { // this handle the images
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Development',
+    }),
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 };
